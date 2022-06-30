@@ -1,0 +1,145 @@
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: hsl(210, 46%, 95%);
+}
+p {
+  font-size: 13px;
+  color: hsl(212, 23%, 69%);
+}
+h1 {
+  font-size: 23px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+h2 {
+  font-size: 17px;
+  line-height: 1;
+  color: hsl(214, 17%, 51%);
+}
+.container {
+  width: 60%;
+  margin: 30vh auto;
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.header-image {
+  width: 40%;
+  background-image: url(images/drawers.jpg);
+  background-size: cover;
+}
+.text {
+  width: 60%;
+  padding: 20px 50px 20px 30px;
+}
+.user-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user-dp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.append {
+  padding: 0 30px;
+  background-color: hsl(214, 17%, 51%);
+  position: absolute;
+  right: 15.5%;
+  top: 60%;
+  border-radius: 10px;
+  width: 200px;
+}
+.append::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 13px solid transparent;
+  border-top-color: hsl(214, 17%, 51%);
+  border-bottom: 0;
+  margin-left: -13px;
+  margin-bottom: -13px;
+}
+.share {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-container {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 90%;
+}
+.share p {
+  color: hsl(210, 46%, 95%);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.hidden {
+  display: none;
+}
+.btn2 {
+  display: none;
+}
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .header-image {
+    height: 210px;
+    width: 100%;
+    background-image: url(images/drawers.jpg);
+    background-size: cover;
+  }
+  h1 {
+    font-size: 17px;
+  }
+  .text {
+    width: 83%;
+    padding: 30px 0 20px;
+    margin: auto;
+  }
+  .append {
+    position: static;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 30px;
+  }
+  .append::after {
+    display: none;
+  }
+  .share {
+    width: 80%;
+  }
+  .share-container {
+    width: 60%;
+  }
+  .btn2 {
+    display: flex;
+  }
+}
